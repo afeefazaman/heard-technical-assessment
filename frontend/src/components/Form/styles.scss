@@ -1,0 +1,51 @@
+@import 'variables' ;
+
+.mat-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+
+  .mat-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .transaction-btn-container {
+      flex: 1;
+      flex-direction: row;
+    }
+
+    .text-field {
+      margin-top: 1rem;
+      width: 45vh;
+    }
+
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .warn-typography {
+      color: $error;
+      align-self: flex-start;
+      margin-top: 5px;
+    }
+
+    .submit-button {
+      width: 10vh;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      text-transform: capitalize;
+    }
+
+    .close-button {
+      color: #000;
+    }
+
+    .submit-button:disabled {
+      background-color: $disable;
+    }
+  }
+}
+
